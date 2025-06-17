@@ -1,19 +1,21 @@
 nav.navbar {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      background-color: rgba(255, 255, 255, 0.95);
-      z-index: 9999;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      backdrop-filter: blur(10px);
-    }
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(16, 182, 232, 0.95);
+    z-index: 9999;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
 
-    .navbar-nav .nav-item {
-      margin: 0 15px;
-    }
+}
 
-    /* Add top padding so content is not hidden under the fixed navbar */
-    .content {
-      padding: 100px 20px 50px;
-    }
+.navbar-nav .nav-item {
+    margin: 0 15px;
+    font-weight:700
+}
+
+/* Add top padding so content is not hidden under the fixed navbar */
+.content {
+    padding: 100px 20px 50px;
+}
