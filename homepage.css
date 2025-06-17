@@ -1,230 +1,239 @@
 #name {
-            margin-left: 230px;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            font-size: 25px;
-        }
+    margin-left: 230px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px;
+}
 
-        .navbar-nav .nav-item {
-            margin: 0 15px;
-            position: sticky;
-            top: 0;
+.navbar-nav .nav-item {
+    margin: 0 15px;
+    position: sticky;
+    top: 0;
 
-        }
+}
 
-        body {
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        }
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
-        #left {
-            margin-left: 30px;
-            font-weight: bold;
-            color: #52555B;
-        }
+#left {
+    margin-left: 30px;
+    font-weight: bold;
+    color: #52555B;
+}
 
-        #information {
-            margin-left: 30px;
-        }
+#information {
+    margin-left: 30px;
+}
 
-        #logos {
-            margin-left: 30px;
-        }
+#logos {
+    margin-left: 30px;
+}
 
-        #BackgroundImage {
-            display: block;
-            margin: 0 auto;
+#BackgroundImage {
+    display: block;
+    margin: 0 auto;
 
-        }
+}
 
-        .captions {
-            margin-top: 30px;
-            margin-left: 30px;
-        }
+.captions {
+    margin-top: 30px;
+    margin-left: 30px;
+}
 
-        .hidden {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: all 0.6s ease-out;
-        }
+.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease-out;
+}
 
-        .show {
-            opacity: 1;
-            transform: translateY(0);
-        }
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
 
-        .heads {
-            display: block;
-            margin: 0 auto;
-            max-width: 100%;
-            height: auto;
-        }
-
-        .sticky-blur-nav {
-            position: sticky;
-            top: 0;
-            z-index: 999;
-            backdrop-filter: blur(8px);
-            background-color: rgba(255, 255, 255, 0.8);
-
-            border-bottom: 1px solid #ccc;
-        }
-
-        header {
-            display: flex;
-            align-items: center;
-            /* Vertically center both items */
-            justify-content: center;
-            /* Optional: centers whole group horizontally */
-            gap: 70px;
-            /* Space between text and image */
-
-        }
-
-        .slider {
-            width: 100%;
-            max-width: 600px;
-            height: 400px;
-            margin: auto;
-            overflow: hidden;
-            position: relative;
-        }
-
-        .slide {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            opacity: 0;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            animation: slideAnimation 12s infinite;
-        }
-
-        /* Assign background images and animation delays */
-        .slide1 {
-            animation-delay: 0s;
-            background-image: url("../School\ of\ Information\ Technology\(Project\)/Photo3.png");
-            /* use your correct path */
-        }
-
-        .slide2 {
-            animation-delay: 4s;
-            background-image: url("../School\ of\ Information\ Technology\(Project\)/Photo2.JPG");
-        }
-
-        .slide3 {
-            animation-delay: 8s;
-            background-image: url("../School\ of\ Information\ Technology\(Project\)/Photo1.jpg");
-        }
-
-        @keyframes slideAnimation {
-            0% {
-                opacity: 0;
-                transform: translateX(100%);
-            }
-
-            8% {
-                opacity: 1;
-                transform: translateX(0);
-            }
-
-            30% {
-                opacity: 1;
-                transform: translateX(0);
-            }
-
-            38% {
-                opacity: 0;
-                transform: translateX(-100%);
-            }
-
-            100% {
-                opacity: 0;
-            }
-        }
-
-        .logo-slider-container {
-            display: flex;
-            align-items: center;
-            /* Vertically center the logo and slider */
-            justify-content: center;
-            /* Center the whole section in the page */
-            gap: 10px;
-            padding: 0px;
-            background-color: #C8D9E6;
-        }
-
-        #logo {
-            width: 200px;
-            /* Set logo size */
-            height: 200px;
-
-        }
-
-        .slider {
-            width: 600px;
-            height: 400px;
-            position: relative;
-            overflow: hidden;
+.heads {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
 
 
 
-        }
+header {
+    display: flex;
+    align-items: center;
+    /* Vertically center both items */
+    justify-content: center;
+    /* Optional: centers whole group horizontally */
+    gap: 70px;
+    /* Space between text and image */
 
-        /* Style for the text */
-        #Head {
-            font-family: 'Poppins', sans-serif;
-            font-size: 70px;
-            font-weight: 600;
-            margin: 0;
-        }
+}
 
-        .milestone-section {
-            background-color: #fef9f5;
-            border-radius: 20px;
-            padding: 40px 30px;
-            max-width: 900px;
-            margin: auto;
-            text-align: center;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
-        }
+.slider {
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
 
-        .milestone-section h1 {
-            font-size: 32px;
-            margin-bottom: 10px;
-            font-weight: 700;
-            color: #222;
-        }
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: slideAnimation 12s infinite;
+}
 
-        .milestone-section p {
-            font-size: 16px;
-            color: #555;
-            margin-bottom: 30px;
-        }
+/* Assign background images and animation delays */
+.slide1 {
+    animation-delay: 0s;
+    background-image: url("../School\ of\ Information\ Technology\(Project\)/Photo3.png");
+    /* use your correct path */
+}
 
-        .milestone-section img {
-            max-width: 100%;
-            height: auto;
-        }
+.slide2 {
+    animation-delay: 4s;
+    background-image: url("../School\ of\ Information\ Technology\(Project\)/Photo2.JPG");
+}
 
-        .milestone-text {
-            flex: 1;
-            padding-right: 30px;
-            font-family: 'Poppins', sans-serif;
-        }
+.slide3 {
+    animation-delay: 8s;
+    background-image: url("../School\ of\ Information\ Technology\(Project\)/Photo1.jpg");
+}
 
-        .milestone-section img {
-            flex: 1;
-            max-width: 400px;
-        }
+@keyframes slideAnimation {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    8% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    30% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    38% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.logo-slider-container {
+    display: flex;
+    align-items: center;
+    /* Vertically center the logo and slider */
+    justify-content: center;
+    /* Center the whole section in the page */
+    gap: 10px;
+    padding: 0px;
+    background-color: #C8D9E6;
+}
+
+#logo {
+    width: 200px;
+    /* Set logo size */
+    height: 200px;
+
+}
+
+.slider {
+    width: 600px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
 
 
-        .milestone-section {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-between;
-            text-align: left;
-        }
-        #copy{
-            font-size: 11px
-        }
+
+}
+
+/* Style for the text */
+#Head {
+    font-family: 'Poppins', sans-serif;
+    font-size: 70px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.milestone-section {
+    background-color: #fef9f5;
+    border-radius: 20px;
+    padding: 40px 30px;
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.milestone-section h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: #222;
+}
+
+.milestone-section p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.milestone-section img {
+    max-width: 100%;
+    height: auto;
+}
+
+.milestone-text {
+    flex: 1;
+    padding-right: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.milestone-section img {
+    flex: 1;
+    max-width: 400px;
+}
+
+
+.milestone-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+}
+
+#copy {
+    font-size: 11px
+}
+
+.sticky-blur-nav {
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    /* Make sure it overlays */
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Slightly transparent */
+    backdrop-filter: blur(10px);
+    /* Blur effect */
+    -webkit-backdrop-filter: blur(10px);
+    /* Safari support */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Optional shadow */
+}
