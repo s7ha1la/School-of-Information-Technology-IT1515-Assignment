@@ -1,0 +1,19 @@
+.navbar-nav .nav-item {
+    margin: 0 15px;
+    position: sticky;
+    top: 0;
+.sticky-blur-nav {
+
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    /* Make sure it overlays */
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Slightly transparent */
+    backdrop-filter: blur(10px);
+    /* Blur effect */
+    -webkit-backdrop-filter: blur(10px);
+    /* Safari support */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Optional shadow */
+}
