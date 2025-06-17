@@ -4,12 +4,31 @@
     font-size: 25px;
 }
 
-.navbar-nav .nav-item {
-    margin: 0 15px;
-    position: sticky;
+
+nav.navbar {
+    position: fixed;
     top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(16, 182, 232, 0.95);
+    z-index: 9999;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
 
 }
+
+.navbar-nav .nav-item {
+    margin: 0 15px;
+    font-weight:700
+}
+
+/* Add top padding so content is not hidden under the fixed navbar */
+.content {
+    padding: 100px 20px 50px;
+}
+
+
+
 
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -68,6 +87,8 @@ header {
     /* Optional: centers whole group horizontally */
     gap: 70px;
     /* Space between text and image */
+
+    padding: 20px;
 
 }
 
@@ -222,19 +243,3 @@ header {
     font-size: 11px;
     margin-left: 30px;
 }
-.sticky-blur-nav {
-
-    position: sticky;
-    top: 0;
-    z-index: 999;
-    /* Make sure it overlays */
-    background-color: rgba(255, 255, 255, 0.8);
-    /* Slightly transparent */
-    backdrop-filter: blur(10px);
-    /* Blur effect */
-    -webkit-backdrop-filter: blur(10px);
-    /* Safari support */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    /* Optional shadow */
-}
-
