@@ -2,13 +2,14 @@
         <div class="container justify-content-center">
             <ul class="navbar-nav d-flex flex-row justify-content-center gap-4">
                 <li>
-                    <a href="index.html"> <!-- Replace with "/" or your actual homepage file/URL -->
-      <img src="../School of Information Technology(Project)/SchoolOfInformationTechnologyLogo.png" alt="Logo" style="height: 50px;" class="Legy">
-    </a>
+                    <a href="Homepage.html"> <!-- Replace with "/" or your actual homepage file/URL -->
+                        <img src="../School of Information Technology(Project)/SchoolOfInformationTechnologyLogo.png"
+                            alt="Logo" style="height: 50px;" class="Legy">
+                    </a>
                 </li>
-                
+
                 <li class="nav-item"><a class="nav-link" href="#">Our Team</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Milestones</a></li>
+                <li class="nav-item"><a class="nav-link" href="Milestones.html">Milestones</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Join Us</a></li>
             </ul>
