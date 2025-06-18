@@ -14,12 +14,11 @@ nav.navbar {
     z-index: 9999;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
-
 }
 
 .navbar-nav .nav-item {
     margin: 0 15px;
-    font-weight:700
+    font-weight: 700;
 }
 
 /* Add top padding so content is not hidden under the fixed navbar */
@@ -27,12 +26,15 @@ nav.navbar {
     padding: 100px 20px 50px;
 }
 
-
-
-
 body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
+            padding-top: 70px;
+            /* adjust to navbar height */
+            font-family: "Poppins", sans-serif;
+            background-color: #fff;
+            color: #000;}
+
+
+
 
 #left {
     margin-left: 30px;
