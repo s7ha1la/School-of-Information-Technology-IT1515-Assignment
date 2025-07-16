@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    padding: 2em;
+    background: linear-gradient(to right, #e0f7fa, #ffffff);
+    /*Gives the page a soft, light gradient instead of plain white.*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    /*Makes the .response-box stay nicely centered on all screen sizes.*/
+}
+
+.response-box {
+    background: #ffffff;
+    padding: 3em 2.5em;
+    max-width: 600px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+h2 {
+    color: #10b6e8;
+    margin-bottom: 1em;
+    font-size: 2rem;
+}
+
+p {
+    color: #444;
+    line-height: 1.6;
+    font-size: 1.05rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    margin-top: 1.5em;
+}
+
+.list-group-item {
+    background: #f1fbfe;
+    padding: 0.8em 1em;
+    border: 1px solid #d4f1f9;
+    border-radius: 10px;
+    margin-bottom: 0.5em;
+    color: #333;
+    /*Styled list items (<li>) with subtle background and border (for small boxes)*/
+
+
+
+}
+
+a.btn {
+    display: inline-block;
+    margin-top: 2em;
+    background-color: #10b6e8;
+    color: white;
+    padding: 0.75em 1.5em;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+a.btn:hover {
+    background-color: #0a9fc6;
+}
+
+/* Fade-in animation when the box loads */
+@keyframes fadeIn 
+/*I want to animate something — here’s how it should change over time.*/
+/*fadeIn is just the name of the animation*/{
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
