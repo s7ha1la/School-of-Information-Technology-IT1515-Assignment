@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submission Received</title>
+    <link rel="stylesheet" href="JoinUs_SubmitedForm.css">
+   
+</head>
+
+<body>
+    <body>
+    <div class="response-box">
+        <div id="head"></div>
+        <h2>Thank You for your Application!</h2>
+        <p>Your application has been received.<br>We will contact you through email once your application has been approved.</p>
+        <p>Here's what you submitted:</p>
+        <ul id="responseList" class="list-group mt-3"></ul>
+        <a href="JoinUs.html" class="btn btn-primary mt-4">← Back to Join Us</a>
+    </div>
+    
+    <script>
+        // Read values from URL parameters
+        const params = new URLSearchParams(window.location.search);
+        const fields = {
+            name: "Full Name",
+            adminNo: "Admission Number",
+            course: "Course",
+            email: "Email",
+            year: "Year",
+            reason: "Reason to Join"
+        };
+
+        const list = document.getElementById("responseList");
+
+        for (const key in fields) {
+            const value = params.get(key);
+            if (value) {
+                const li = document.createElement("li");
+                li.className = "list-group-item";
+                li.innerHTML = `<strong>${fields[key]}:</strong> ${decodeURIComponent(value)}`;
+                list.appendChild(li);
+            }
+        }
+    </script>
+</body>
+</html>
