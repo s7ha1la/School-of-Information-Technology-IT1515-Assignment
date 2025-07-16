@@ -1,0 +1,174 @@
+/***Body***/
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/***Navigation bar***/
+
+nav.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(16, 182, 232, 0.95);
+    z-index: 9999;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+
+}
+
+.navbar-nav .nav-item {
+    margin: 0 15px;
+    font-weight: 700
+}
+
+/* Add top padding so content is not hidden under the fixed navbar */
+.content {
+    padding: 130px 20px 50px;
+}
+
+/***Section Layout***/
+.join-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    padding: 150px 40px 60px;
+    background-color: #f9f9f9;
+}
+
+/***Left Column: Contact Info***/
+.info-column {
+    flex: 1 1 300px;
+    max-width: 500px;
+    padding: 1rem;
+}
+
+.info-column h2 {
+    font-size: 2em;
+    margin-bottom: 1rem;
+    font-family: "Poppins", sans-serif;
+   font-weight: 600;
+    color: #000
+
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact-item .icon {
+   width: 30px;
+   height: 30px;
+}
+
+.contact-item img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+/*** Right Column: Form ***/
+.form-column {
+    flex: 1 1 400px;
+    max-width: 600px;
+    background-color: #003366;
+    /* navy-like background */
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+/*** Form Styles ***/
+.form-column fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.form-column legend {
+    font-size: 2em;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+/*** Inputs, Select, Textarea ***/
+.form-column input,
+.form-column select,
+.form-column textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    border: none;
+    box-sizing: border-box;
+}
+
+/*** Buttons ***/
+
+.form-column button {
+    background-color: #10b6e8;
+    color: white;
+    border: none;
+    padding: 0.6em 1.5em;
+    font-weight: 600;
+    border-radius: 4px;
+}
+
+.form-column button:hover {
+    opacity: 0.9;
+}
+
+h5{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: #3e3d3d;
+
+}
+
+#map{
+    border-radius: 20px;
+}
+footer{
+    background-color: navy;
+    color: #fff;
+    margin: auto;
+}
+
+.footer-container{
+    display: flex;
+    padding-top: 20px;
+    gap: 120px;
+}
+
+.whatsNext{
+    margin-left: 30px;
+    text-align: unset;
+}
+
+.ContactInfo{
+    text-align: unset;
+}
+
+.footerLink{
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+    color:gray;
+}
+
+#copy {
+    font-size: 11px;
+    margin-left: 30px;
+    margin-top: 30px;
+    color: #fff;
+}
+
+
