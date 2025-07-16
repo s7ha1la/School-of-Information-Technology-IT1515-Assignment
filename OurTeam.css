@@ -1,0 +1,242 @@
+/***Body***/
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: whitesmoke;
+  padding-top: 60px;
+}
+
+/***Navigation bar***/
+
+nav.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(16, 182, 232, 0.95);
+  z-index: 9999;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+
+}
+
+.navbar-nav .nav-item {
+  margin: 0 15px;
+  font-weight: 700
+}
+
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background-color: rgba(16, 182, 232, 0.95);
+    padding: 10px 0;
+    border-radius: 0 0 10px 10px;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-nav .nav-item {
+    margin: 10px 0;
+  }
+}
+
+#highlights{
+  font-weight: 600;
+  font-family:"Poppins", sans-serif;
+  color: black;
+}
+#inspire{
+  font-weight: 600;
+  font-family:"Poppins", sans-serif;
+  color: black;
+}
+
+
+/* Add top padding so content is not hidden under the fixed navbar */
+.content {
+  padding: 120px 20px 50px;
+}
+
+/*Banner*/
+.hero-section {
+  position: relative;
+  width: 100%;
+  height:500px;
+  /* You can adjust height as needed */
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Ensures image covers the container without distortion */
+  display: block;
+}
+
+.hero-text {
+  position: absolute;
+  bottom: 30px;
+  left: 50px;
+  color: white;
+  z-index: 2;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.hero-text p {
+  margin: 10px 0 0;
+  font-size: 1rem;
+}
+
+/*** Team Section ***/
+.text-center .mb-5 {
+  padding-top: 30%;
+}
+
+.team-section {
+  text-align: center;
+}
+
+.img-container {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  padding: 1rem;
+  transition: transform 0.2s ease;
+}
+
+/* Hover effect on the container */
+.img-container:hover {
+  transform: translateY(-5px) scale(1.02);
+}
+
+.team-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+/* Overlay */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  z-index: 2;
+}
+
+/* Reveal overlay on hover */
+.img-container:hover .overlay {
+  opacity: 1;
+}
+
+.overlay h5 {
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+  
+}
+
+.headss{
+  font-weight: 600;
+  font-family: "Poppins",sans-serif;
+  color: black
+}
+
+.dummy{
+  font-weight: 300;
+  font-family: "Poppins" , sans-serif;
+  color: rgb(61, 63, 61)
+}
+
+.overlay h4 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+h2{
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.overlay p {
+  font-size: 0.9rem;
+  margin: 0;
+  color: #ccc;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-out;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+footer{
+    background-color: navy;
+    color: #fff;
+    margin: auto;
+}
+
+.footer-container{
+    display: flex;
+    padding-top: 20px;
+    gap: 120px;
+}
+
+.whatsNext{
+    margin-left: 30px;
+    text-align: unset;
+}
+
+.ContactInfo{
+    text-align: unset;
+}
+
+.footerLink{
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+    color:gray;
+}
+
+#copy {
+    font-size: 11px;
+    margin-left: 30px;
+    margin-top: 30px;
+    color: #fff;
+}
